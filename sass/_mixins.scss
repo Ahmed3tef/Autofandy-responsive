@@ -1,0 +1,19 @@
+@mixin btn-load($height) {
+  @extend %btn-primary-style;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: $height;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  &--text {
+    @extend %font-65;
+    font-size: 1.4rem;
+  }
+  i {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    fill: $color-white;
+  }
+}

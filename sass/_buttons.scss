@@ -1,0 +1,30 @@
+.btn__search {
+  @extend %btn-primary-style;
+  &-1 {
+    width: 5.2rem;
+    height: 5.2rem;
+    margin-right: 4rem;
+  }
+  &-2 {
+    @extend %font-65;
+    font-size: 1.8rem;
+    width: 11.4rem;
+    height: 100%;
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 4rem;
+
+      // padding: 0 3rem;
+    }
+  }
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+.btn__load {
+  @include btn-load(5.4rem);
+}
+.brands .btn__load {
+  @include btn-load(5.2rem);
+}

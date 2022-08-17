@@ -1,0 +1,133 @@
+// fonts //
+@font-face {
+  font-family: 'Frutiger LT Arabic 45';
+  src: url('../fonts/FrutigerLTArabic-45Light.woff2') format('woff2'),
+    url('../fonts/FrutigerLTArabic-45Light.woff') format('woff'),
+    url('../fonts/FrutigerLTArabic-45Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Frutiger LT Arabic 45';
+  src: url('../fonts/FrutigerLTArabic-65Bold.woff2') format('woff2'),
+    url('../fonts/FrutigerLTArabic-65Bold.woff') format('woff'),
+    url('../fonts/FrutigerLTArabic-65Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Frutiger LT Arabic 55 Roman';
+  src: url('../fonts/FrutigerLTArabic-55Roman.woff2') format('woff2'),
+    url('../fonts/FrutigerLTArabic-55Roman.woff') format('woff'),
+    url('../fonts/FrutigerLTArabic-55Roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Frutiger LT Arabic 55 Roman';
+  src: url('../fonts/FrutigerLTArabic-75Black.woff2') format('woff2'),
+    url('../fonts/FrutigerLTArabic-75Black.woff') format('woff'),
+    url('../fonts/FrutigerLTArabic-75Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @media (max-width: 1199px) {
+    font-size: 58%;
+  }
+  @media (max-width: 991px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  @extend %font-55;
+  background-color: $color-white;
+  font-size: 1.6rem;
+}
+
+button,
+button:focus {
+  border: none;
+  outline: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+
+h2 {
+  @extend %font-75;
+  font-size: 2rem;
+  color: $color-black;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: start;
+  @media (max-width: 576px) {
+    font-size: 1.8rem;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $color-header-line;
+    height: 2px;
+    width: 100%;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 6.7rem;
+    background-color: $color-primary;
+    z-index: 3;
+  }
+}
+
+h3 {
+  @extend %font-65;
+  font-size: 2.1rem;
+  @media (max-width: 576px) {
+    font-size: 1.7rem;
+  }
+}
+
+p {
+  @extend %font-55;
+  font-size: 1.6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  color: $color-paragraph;
+  @media (max-width: 576px) {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,47 @@
+// colors //
+$color-primary: #ed2228;
+
+$color-select-placeholder: #b3b3b3;
+$color-lang: #a3a3a3;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-paragraph: #7d7d7d;
+$color-paragraph-main: #adadad;
+
+$color-header-line: #e7e7e7;
+
+$color-car-brand: #efa81f;
+$color-car-name: #8a8a8a;
+$color-car-year: #bebfbe;
+
+$color-footer: #000;
+$color-copyright: #858484;
+$color-line: #ffffff26;
+
+$shadow: 0px 0px 20px 0px rgba(22, 22, 22, 0.1);
+
+$margin-top-sidebar-children: 4rem;
+// fonts //
+%font-45 {
+  font-family: 'Frutiger LT Arabic 45';
+  font-weight: 300;
+}
+%font-55 {
+  font-family: 'Frutiger LT Arabic 55 Roman';
+  font-weight: 400;
+}
+%font-65 {
+  font-family: 'Frutiger LT Arabic 45';
+  font-weight: 700;
+}
+%font-75 {
+  font-family: 'Frutiger LT Arabic 55 Roman';
+  font-weight: 900;
+}
+
+%btn-primary-style {
+  background-color: $color-primary;
+  color: $color-white;
+}
