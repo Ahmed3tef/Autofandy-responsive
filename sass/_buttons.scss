@@ -1,5 +1,8 @@
 .btn__search {
   @extend %btn-primary-style;
+  &:hover {
+    background-color: darken($color-primary, 10);
+  }
   &-1 {
     width: 5.2rem;
     height: 5.2rem;
@@ -22,10 +25,10 @@
 
 .btn__load {
   @include btn-load(5.4rem);
-}
-.brands .btn__load {
-  @include btn-load(5.2rem);
   &:hover {
     background-color: darken($color-primary, 10);
   }
+}
+.brands .btn__load {
+  @include btn-load(5.2rem);
 }

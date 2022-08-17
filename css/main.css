@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.brands .btn__load--text, .btn__load--text, .btn__search-2, .subscribe__form-btn, .vids__content h4, .navbar__link, h3 {
+.subscribe__form-btn, .vids__content h4, .navbar__link, .brands .btn__load--text, .btn__load--text, .btn__search-2, h3 {
   font-family: "Frutiger LT Arabic 45";
   font-weight: 700;
 }
@@ -100,9 +100,6 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-button:hover {
-  background-color: #cb1116;
-}
 
 ul {
   list-style: none;
@@ -162,6 +159,68 @@ p {
   p {
     font-size: 1.4rem;
   }
+}
+
+.btn__search:hover {
+  background-color: #cb1116;
+}
+.btn__search-1 {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-right: 4rem;
+}
+.btn__search-2 {
+  font-size: 1.8rem;
+  width: 11.4rem;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .btn__search-2 {
+    width: 100%;
+    height: 4rem;
+  }
+}
+.btn__search i {
+  font-size: 1.6rem;
+}
+
+.btn__load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5.4rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.btn__load--text {
+  font-size: 1.4rem;
+}
+.btn__load i {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  fill: #fff;
+}
+.btn__load:hover {
+  background-color: #cb1116;
+}
+
+.brands .btn__load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5.2rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.brands .btn__load--text {
+  font-size: 1.4rem;
+}
+.brands .btn__load i {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  fill: #fff;
 }
 
 header {
@@ -836,63 +895,4 @@ footer .content {
 }
 .info .instagram:hover {
   color: #c32aa3;
-}
-
-.btn__search-1 {
-  width: 5.2rem;
-  height: 5.2rem;
-  margin-right: 4rem;
-}
-.btn__search-2 {
-  font-size: 1.8rem;
-  width: 11.4rem;
-  height: 100%;
-}
-@media (max-width: 767px) {
-  .btn__search-2 {
-    width: 100%;
-    height: 4rem;
-  }
-}
-.btn__search i {
-  font-size: 1.6rem;
-}
-
-.btn__load {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 5.4rem;
-  margin-bottom: 0;
-  margin-top: 2rem;
-}
-.btn__load--text {
-  font-size: 1.4rem;
-}
-.btn__load i {
-  font-size: 1.6rem;
-  margin-left: 1rem;
-  fill: #fff;
-}
-
-.brands .btn__load {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 5.2rem;
-  margin-bottom: 0;
-  margin-top: 2rem;
-}
-.brands .btn__load--text {
-  font-size: 1.4rem;
-}
-.brands .btn__load i {
-  font-size: 1.6rem;
-  margin-left: 1rem;
-  fill: #fff;
-}
-.brands .btn__load:hover {
-  background-color: #cb1116;
 }

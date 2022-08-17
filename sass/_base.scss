@@ -74,9 +74,6 @@ button:focus {
 button {
   background-color: transparent;
   cursor: pointer;
-  &:hover {
-    background-color: darken($color-primary, 10);
-  }
 }
 ul {
   list-style: none;
